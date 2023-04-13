@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    body{
+      padding-top: 20px;
+      padding-left: 15px;
+    }
+  </style>
+</head>
+<body>
+<input type="text" id="texboxvalue">
+<input type="button" id="btnadd" onclick="add_element_to_array()" value="add">
+<input type="button" id="btndisplay" onclick="display_array()" value="display">
+<div id="result"></div>
+</body>
+<script>
+  function  add_element_to_array()
+  {
+      array[X] = document.getElementById("texboxvalue").value;
+      alert("element: "+array[x] + " added at index "+x);
+      x++;
+      document.getElementById("texboxvalue").value = "";
+  }
+  function display_array() {
+      let e = "<hr/>";
+      for (let i = 0; i < array.length; i++) {
+          e += "Element " + i + " = " + array[i] + "<br/>";
+      }
+      document.getElementById("result").innerHTML = e;
+  }
+</script>
+</html>
