@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<h3>Chương trình tra cứu từ điển có sẵn</h3>
+<p>chọn: apple, lemons, orange, potato, banana</p>
+<input type="text" id="inputword" placeholder="Nhập từ cần tra">
+<button onclick="search()">Search</button>
+
+</body>
+<script>
+    function search()
+    {
+        let arr1 = ["apple", "lemons", "orange", "potato", "banana"]
+        let arr2 = ["táo", "chanh", "cam", "khoai tây", "chuối"]
+        let check = false;
+        for(let i=0;i<arr1.length;i++) {
+            if (document.getElementById("inputword").value === arr1[i])
+            {
+                for(let j=0;j<arr2.length;j++)
+                {
+                    if(i==j)
+                    {
+                        document.write(arr1[i]+" có nghĩa là : "+arr2[j])
+                    }
+                }
+                check = true;
+            }
+
+        }
+        if(check==false)
+        {
+            document.write("từ bạn nhập không có tỏng từ điển này :), hãy nhập lại")
+        }
+
+    }
+</script>
+</html>
