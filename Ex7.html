@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h3>khởi tạo và nhập giá trị cho 1 mảng số nguyên, xóa phần tử trong mảng</h3>
+<button onclick="f()">Bắt đầu</button>
+</body>
+<script>
+  function f()
+  {
+    const arr = [];
+    const total = 10;
+    let flag = false;
+    let index;
+    for (let i = 0; i < total; i++) {
+      //arr.push('a');
+      arr[i] = prompt("Nhap vao phan tu thu "+i)
+    }
+    //document.write(arr);
+    const x = prompt("nhap vao so can tim trong mang : ")
+    for(let j=0;j<arr.length;j++)
+    {
+      if(arr[j]===x)
+      {
+        flag = true;
+        index=j;
+      }
+    }
+    if(flag==true)
+    {
+      for(let k=arr.length; k>x-1;k--)
+      {
+        arr[k-1]=arr[k];
+        arr.push(0);
+      }
+    }
+    document.write(arr+" ")
+
+
+
+  }
+</script>
+</html>

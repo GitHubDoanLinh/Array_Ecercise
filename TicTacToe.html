@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caro game</title>
+    <meta name = "viewport" content="width-device-width, initial-scale=1.0">
+    <style>
+        .background{
+            background-color: aquamarine;
+            height: 100vh;
+            padding-top: 1px;
+        }
+        .title{
+            color: aliceblue;
+            font-size: 40px;
+            margin-top: 10%;
+        }
+        .hide{
+            display: none;
+        }
+        .container{
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows:  33% 33% 33%;
+            max-width: 300px;
+        }
+    </style>
+
+</head>
+<body>
+<MAIN CLASS="background">
+    <section class="title">
+        <h1> tic tac toe</h1>
+    </section>
+
+    <section class="display">
+        Player<span class="display-player playerX">X</span>'s turn
+    </section>
+
+    <section class="container">
+        <div class="title"></div>
+        <div class="title"></div>
+        <div class="title"></div>
+        <div class="title"></div>
+        <div class="title"></div>
+        <div class="title"></div>
+        <div class="title"></div>
+        <div class="title"></div>
+        <div class="title"></div>
+    </section>
+    <section class="display announcer hide"></section>
+    <section class="controls">
+        <button id="reset"></button>
+    </section>
+</MAIN>
+</body>
+</html>
