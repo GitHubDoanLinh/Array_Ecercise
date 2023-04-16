@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h3>chương trình khai báo một mảng ký tự và kích thước của mảng. Chương trình này đếm số ký tự số trong mảng.</h3>
+<button onclick="f()">Bắt đầu</button>
+</body>
+<script>
+  function f()
+  {
+    const arr = [];
+    const total = prompt("nhập vào kích thước của mảng");
+    let count=0;
+    for (let i = 0; i < total; i++) {
+      //arr.push('a');
+      arr[i] = prompt("Nhap vao phan tu thu "+i)
+    }
+    document.write(arr);
+    for(let j=0;j<arr.length;j++)
+    {
+      if(arr[j]%1==0)
+       count++;
+    }
+    document.write("<br>có "+count +" ký tự là số trong mảng ")
+
+
+  }
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h3>khởi tạo và nhập giá trị cho 1 mảng số nguyên, tìm giá trị trong mảng</h3>
+<button onclick="f()">Bắt đầu</button>
+</body>
+<script>
+  function f()
+  {
+    const arr = [];
+    const total = prompt("nhập vào kích thước mảng");
+    for (let i = 0; i < total; i++) {
+      arr[i] = prompt("Nhap vao phan tu thu "+i)
+    }
+    document.write(arr);
+    for(let j=0;j<arr.length;j++)
+    {
+      if(arr[j]==="-")
+        arr[j]="_";
+    }
+    document.write("<br>"+arr+",")
+
+
+  }
+</script>
+</html>
